@@ -21,7 +21,7 @@ body {
 .wrapper {
   margin: 3rem auto 3rem;
   padding: 0 30px;
-  max-width: 920px;
+  max-width: 1020px;
 }
 
 /* HEADER */
@@ -68,6 +68,13 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 2rem;
   row-gap: 2rem;
+}
+
+/* DETAILS GRID */
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
 }
 
 
@@ -118,5 +125,12 @@ body {
   .menu-grid {
     grid-template-columns: 1fr;
     row-gap: 2rem;
+  }
+  
+  /* DETAILS GRID */
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
   }
 }

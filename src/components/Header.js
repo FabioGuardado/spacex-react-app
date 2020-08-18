@@ -24,14 +24,14 @@ const Header = () => {
         <div className="header-grid">
             <div className="header-column">
                 <Link to="/"> 
-                    <img className="header-logo" src={Logo} />
+                    <img className="header-logo" src={Logo} alt="SpaceX logo" />
                 </Link>
             </div>
             <div className="header-column">
                 <div className="nav-menu">
                     <Element to="/" className="element">Rockets and capsules</Element>
-                    <Element className="element">Launches</Element>
-                    <Element className="element">About</Element>
+                    <Element to="/"className="element">Launches</Element>
+                    <Element to="/"className="element">About</Element>
                 </div>
                 {/* <span className="btn-menu"><i className="fas fa-bars"></i></span> */}
             </div>
