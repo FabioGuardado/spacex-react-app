@@ -31,7 +31,7 @@ const Rocket = ({data}) => {
 
                 <h4>Payload weights</h4>
                     <SecondaryItem>
-                        <ul>
+                        <ul className="rockets-payloads">
                         {
                             data.payload_weights.map(payload => (
                                 <li key={payload.id}><span>{payload.name} ({payload.id}):</span> {payload.kg} kg</li>

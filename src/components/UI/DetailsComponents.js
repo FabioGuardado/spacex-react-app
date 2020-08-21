@@ -24,7 +24,7 @@ export const DataComponent = styled.div`
     }
 
     div {
-        margin: 0.8rem;
+        margin: 0.8rem 0;
         line-height: 1.7rem;
 
     }
@@ -63,14 +63,14 @@ export const SecondaryItem = styled.div`
         text-transform: uppercase;
         font-weight: 700;
     }
-    li {
+    .dragon-thruster {
         display: block;
         
         &:hover {
             background-color: var(--White);
         }
     }
-    li p {
+    .dragon-thruster p {
         padding: 0.2rem;
         margin-left: 0.6rem;
         display: flex;
@@ -106,6 +106,12 @@ export const Description = styled.div`
 
     .image-project {
         position: relative;
+        
+        @media(max-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .image-project img {
@@ -115,10 +121,10 @@ export const Description = styled.div`
         padding: 0.6rem;
         background-color: var(--NavyBlue);
 
-        @media (max-width: 768px){
+        @media(max-width: 768px){
             margin: 0 auto;
             max-width: 80vw;
-            height: auto;
+            max-height: auto;
         }
     }
 

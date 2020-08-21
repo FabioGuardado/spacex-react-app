@@ -22,7 +22,7 @@ const Dragon = ({data}) => {
                     <ul>
                     {
                         data.thrusters.map(thruster => (
-                            <li key={thruster.type} >
+                            <li className="dragon-thruster" key={thruster.type} >
                                 <h6>{thruster.type}</h6>
                                 <p><span>Amount: </span> {thruster.amount}</p>
                                 <p><span>Thrust: </span> {thruster.thrust.kN} kN</p>
