@@ -76,6 +76,12 @@ body {
   column-gap: 2rem;
 }
 
+/* LAUNCHES */
+.launch-bg {
+  background-color: var(--DarkGray);
+  border: 1px solid transparent;
+}
+
 
 @media (max-width: 768px) {
   /* GLOBALS */

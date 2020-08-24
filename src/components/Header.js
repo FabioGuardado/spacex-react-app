@@ -94,7 +94,7 @@ const Header = () => {
                         <div className="btn-close" onClick={handleClick} ><i className="fas fa-times"></i></div>
                         <div className="nav-links">
                             <Link to="/" onClick={() => setBurgerMenu(!burgerMenu)} >Rockets and capsules</Link>
-                            <Link to="/launch" onClick={() => setBurgerMenu(!burgerMenu)} >Launches</Link>
+                            <Link to="/launches" onClick={() => setBurgerMenu(!burgerMenu)} >Launches</Link>
                             <Link to="/about" onClick={() => setBurgerMenu(!burgerMenu)} >About SpaceX</Link>
                         </div>
                     </BurgerMenu>
@@ -111,7 +111,7 @@ const Header = () => {
                     <div onClick={handleClick} className="btn-menu"><i className="fa fa-bars"></i></div>
                     <div className="nav-menu">
                         <Element to="/" className="element">Rockets and capsules</Element>
-                        <Element to="/launch" className="element">Launches</Element>
+                        <Element to="/launches" className="element">Launches</Element>
                         <Element to="/about" className="element">About</Element>
                     </div>
                     

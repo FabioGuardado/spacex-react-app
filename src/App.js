@@ -9,6 +9,7 @@ import Footer from './components/UI/Footer';
 
 //Pages
 import Details from './components/Details';
+import Launches from './components/Launches';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Switch>
                   <Route exact path="/" component={Menu} />
                   <Route path="/details/:project/:id" component={Details} />
+                  <Route exact path="/launches" component={Launches}/>
                   <Route path="*" component={Error} />
               </Switch>
             </div>
