@@ -27,6 +27,7 @@ export const LaunchPageDetails = styled.div`
     h1 {
         text-transform: uppercase;
         letter-spacing: 0.3rem;
+        margin-bottom: 1rem;
     }
     .img-container {
         margin: 2rem 0 1rem;
@@ -102,7 +103,70 @@ export const LaunchPageDetails = styled.div`
 
 export const UpcomingLaunches = styled.div`
     h1 {
+        color: var(--DarkGray);
         text-transform: uppercase;
         letter-spacing: 0.3rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--DarkGray);
+        margin-bottom: 1rem;
+        
+        @media(max-width: 768px) {
+            text-align: center;
+            font-size: 1.6rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+
+    .upc-launch-container {
+        display: grid;
+        grid-template-columns: 80px 1.5fr 0.5fr;
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.7rem;
+        border-bottom: 1px solid var(--DarkGray);
+
+        .launch-column-1,
+        .launch-column-2,
+        .launch-column-3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .launch-column-3 {
+            flex-direction: column;
+        }
+
+        @media(max-width: 768px) {
+            grid-template-columns: 80px 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            h3 {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+            
+            p {
+                font-size: 0.9rem;
+            }
+
+            .launch-column-1 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 1;
+                grid-row-end: span-2;
+            }
+            .launch-column-2 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 1;
+            }
+            .launch-column-3 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 2;
+            }
+        }
     }
 `;

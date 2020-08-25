@@ -75,9 +75,19 @@ const Launches = () => {
                     <h1>Upcoming launches</h1>
                     {
                         upcomingLaunches.map(Launch => (
-                            <div key={Launch.id} >
-                                <h3>{Launch.name}</h3>
-                                <img width="60px" src={`${ (Launch.links.patch.small) ? Launch.links.patch.small : nopatch}`} alt="patch of mission" />
+                            <div className="upc-launch-container" key={Launch.id} >
+                                <div className="launch-column-1">
+                                    <img width="60px" src={`${ (Launch.links.patch.small) ? Launch.links.patch.small : nopatch}`} alt="patch of mission" />
+                                </div>
+
+                                <div  className="launch-column-2">
+                                    <h3>{Launch.name}</h3>
+                                </div>
+
+                                <div  className="launch-column-3">
+                                    <p>{moment(Launch.date_local).format("DD / MM / YYYY")}</p>
+                                    <p>{moment(Launch.date_local).format("hh:mm:ss A")}</p>
+                                </div>
                             </div>
                         ))
                     }
