@@ -1,6 +1,6 @@
 # SpaceX App 🚀
 
-Es una aplicación hecha con React, que muestra información sobre los proyectos más importantes de SpaceX; más adelante, mostrará información sobre los lanzamientos.
+Es una aplicación hecha con React, que muestra información sobre los proyectos más importantes y futuros lanzamientos de SpaceX.
 
 Puedes visitarla [aquí](https://inspiring-pike-521298.netlify.app).
 

@@ -95,7 +95,6 @@ const Header = () => {
                         <div className="nav-links">
                             <Link to="/" onClick={() => setBurgerMenu(!burgerMenu)} >Rockets and capsules</Link>
                             <Link to="/launches" onClick={() => setBurgerMenu(!burgerMenu)} >Launches</Link>
-                            <Link to="/about" onClick={() => setBurgerMenu(!burgerMenu)} >About SpaceX</Link>
                         </div>
                     </BurgerMenu>
                 :
@@ -112,7 +111,6 @@ const Header = () => {
                     <div className="nav-menu">
                         <Element to="/" className="element">Rockets and capsules</Element>
                         <Element to="/launches" className="element">Launches</Element>
-                        <Element to="/about" className="element">About</Element>
                     </div>
                     
                 </div>
